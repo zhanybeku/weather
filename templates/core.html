@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+    <title>App Title</title>
+  </head>
+  <body>
+    {% block core_header %}
+    <h1>Title</h1>
+    {% endblock core_header %}
+
+    {% block core_body %}
+    <!-- This is where we put stuff-->
+    {% endblock core_body %}
+
+    {% block core_footer %}
+    <footer>Footer</footer>
+    {% endblock core_footer %}
+  </body>
+</html>
